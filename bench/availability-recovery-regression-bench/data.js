@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732185424362,
+  "lastUpdate": 1732188704777,
   "repoUrl": "https://github.com/paritytech/polkadot-sdk",
   "entries": {
     "availability-recovery-regression-bench": [
@@ -30703,6 +30703,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "availability-recovery",
             "value": 11.400030023799998,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "git@kchr.de",
+            "name": "Bastian Köcher",
+            "username": "bkchr"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "56d97c3ad8c86e602bc7ac368751210517c4309f",
+          "message": "slot-based-collator: Move spawning of the futures (#6561)\n\nMove spawning of the slot-based collator into the `run` function. Also\nthe tasks are being spawned as blocking task and not just as normal\ntasks.\n\n---------\n\nCo-authored-by: GitHub Action <action@github.com>",
+          "timestamp": "2024-11-21T10:14:36Z",
+          "tree_id": "75d78ebd50864fddaf7349c1f73fb8b2b237e272",
+          "url": "https://github.com/paritytech/polkadot-sdk/commit/56d97c3ad8c86e602bc7ac368751210517c4309f"
+        },
+        "date": 1732188685771,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "Received from peers",
+            "value": 307203,
+            "unit": "KiB"
+          },
+          {
+            "name": "Sent to peers",
+            "value": 1.6666666666666665,
+            "unit": "KiB"
+          },
+          {
+            "name": "test-environment",
+            "value": 0.2323725778,
+            "unit": "seconds"
+          },
+          {
+            "name": "availability-recovery",
+            "value": 11.417231648233331,
             "unit": "seconds"
           }
         ]
